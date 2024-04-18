@@ -1,16 +1,20 @@
 function assignGrade() {
-    let score = prompt('Student scores','');
-    if (score > 90) {
-        alert('A');
-    } else if (score > 85) {
-        alert('B')
-    } else if (score > 75) {
-        alert('C');
-    } else if (score > 65) {
-        alert('D');
-    } else {
-        alert('F');
-    } 
+    let score = prompt('Enter score');
+    switch (true) {
+      case score > 90:
+        alert ('A');
+        break;
+      case score>85:
+        alert ('B');
+        break;
+      case score>75:
+        alert ('C');
+        break;
+        case score>65:
+        alert ('D');
+        break;
+      default:
+        alert ('F');
     }
-    
+    }    
     assignGrade()

@@ -1,12 +1,23 @@
-let score=prompt('scores');
-if (score>=80) {
-    alert('A');
-}else if (score>=70){
-    alert('B');
-}else if (score>=60){
-    alert('C');
-}else if (score>=50){
-    alert('D');
-} else if (score>=0){
-    alert('F');
+let score = prompt('Enter score');
+switch (true) {
+    case score > 100:
+        alert(' ');
+        break;
+    case score > 79:
+        alert('A');
+        break;
+    case score > 69:
+        alert('B');
+        break;
+    case score > 59:
+        alert('C');
+        break;
+    case score > 49:
+        alert('D');
+        break;
+    case score > 0:
+        alert('F');
+        break;
+    default:
+        alert('wrong');
 }

@@ -1,13 +1,18 @@
 
-
-function language(){
-    let text= prompt('Hello World', 'choose language: en,de,es'); 
-    if(text=='de') {
-        alert('Pozdrav svijete');
-    }else if(text=='es') {
-        alert('Tere, Maailm');
-    }else{
-        alert('Hello World');
+function language() {
+    let text = prompt('Hello World', 'choose language: es, de, en');
+    switch (text) {
+        case 'de':
+            alert('Pozdrav svijete');
+            break;
+        case 'es':
+            alert('Tere, Maailm');
+            break;
+        case 'en':
+            alert('Hello World');
+            break;
+        default:
+            alert('Hello World');
     }
 }
 language()

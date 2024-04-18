@@ -1,9 +1,7 @@
-let a=5;
-let b=5;
+let a = prompt('enter number');
+let b = prompt('enter number');
 if(a>b){
-    console.log ('a is greater than b')
-}else if(a<b){
-    console.log ('a is less than b');
+    console.log (`${a} is greater than ${b}`)
 }else{
-    console.log ('beraberdir');
+    console.log (`${a} is less than ${b}`)
 }

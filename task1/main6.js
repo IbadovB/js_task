@@ -1,5 +1,6 @@
+function age() {
 let myAge = prompt('My age');
-    let yourAge= prompt('Enter your age');
+    let yourAge= prompt('You age');
       
     switch (true) {
       case myAge>yourAge:
@@ -11,5 +12,7 @@ let myAge = prompt('My age');
         case myAge===yourAge:  
         console.log ('We have the same age');
       default:
-        console.log ('wrong age');
+        console.log ('wrong');
     }
+}
+age()
